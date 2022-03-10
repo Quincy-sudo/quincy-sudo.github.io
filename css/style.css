@@ -49,7 +49,7 @@
 }
 
 ::before ::after {
-  box-sizing: inherit;
+  box-sizing: flex;
 }
 
 html {
@@ -325,7 +325,7 @@ p:last :last-child {
 
 @media (min-width: 35em) {
   .primary-navigation {
-    padding-inline: clamp(3rem, 7vw, 7rem);
+    padding-inline: clamp(1rem, 1rem, 1rem);
   }
 }
 
@@ -353,7 +353,6 @@ p:last :last-child {
 
 .underline-indicators > * {
   cursor: pointer;
-  padding: 1em 0em 1em;
   border: 0;
   border-bottom: 0.2rem solid var(--clr-accent);
   background-color: transparent;
@@ -630,6 +629,16 @@ footer a {
     padding: 6em 1em;
     background-color: rgb(255, 254, 254);
   }
+  .primary-header {
+    display: flex;
+  }
+
+  .underline-indicators > * {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    max-height: 60px;
+  }
   .primary-navigation {
     background-color: rgb(155, 154, 154);
     background-image: url(/img/logo.jpg);
@@ -808,13 +817,26 @@ footer a {
     padding: 6em 1em;
     background-color: rgb(255, 255, 255);
   }
+  .primary-header {
+    display: block;
+  }
+
+  .underline-indicators > * {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    max-height: 60px;
+  }
+
   .primary-navigation {
     background-color: rgb(155, 154, 154);
     background-image: url(/img/logo.jpg);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
   }
+
   .primary-navigation a {
     text-decoration: none;
     font-size: medium;
