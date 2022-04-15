@@ -59,9 +59,11 @@ html {
 
 body {
   text-align: center;
-  width: min(100% - 2rem, 2000px);
-  margin-inline: auto;
-  background-color: var(--clr-accent-dark);
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  background-color: var(--clr-orange);
 }
 img {
   width: auto;
@@ -458,6 +460,7 @@ p:last :last-child {
   background-blend-mode: multiply;
   background-size: cover;
   text-align: left;
+
   padding: 3rem 1em 1em;
 }
 .about-us_body {
@@ -499,10 +502,8 @@ section {
   text-align: left;
 }
 .section-title-sponsor {
-  padding-inline-start: var(--size-6);
-  margin-block: var(--size-9) var(--size-3);
-  text-align: left;
-  width: min(100%, 1000px);
+  text-align: center;
+  width: min(80%, 500px);
   margin-inline: auto;
 }
 .service_content {
@@ -517,7 +518,7 @@ section {
 }
 
 .contact_title {
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding-top: 2.5em;
   margin-bottom: 0.5em;
@@ -534,13 +535,11 @@ section {
   background-size: cover;
   color: white;
   text-align: center;
-  width: min(97%, 1000px);
-  margin-inline: auto;
-  padding: 0 1em 0;
+  padding: 1em;
 }
 .Contact-online {
-  background-color: var(--clr-orange);
-  color: white;
+  background-color: var(--clr-accent-dark);
+  color: rgb(255, 255, 255);
   padding-bottom: 1em;
   text-align: left;
   padding-top: 0;
@@ -652,6 +651,14 @@ footer a {
   .primary-header {
     display: flexbox;
   }
+  body {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    background-color: var(--clr-orange);
+  }
   .section-title {
     padding-inline-start: var(--size-6);
     margin-block: var(--size-9) var(--size-3);
@@ -703,6 +710,7 @@ footer a {
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-size: cover;
+    margin-left: 0;
     text-align: left;
     padding: 3rem 1em 1em;
   }
@@ -722,7 +730,7 @@ footer a {
   .section-title-small small {
     font-size: 0.65em;
     display: block;
-    width: min(95%, 1000px);
+    width: min(100%, 1400px);
     margin-inline: auto;
   }
   .what_do {
@@ -859,10 +867,24 @@ footer a {
     padding: 6em 1em;
     background-color: rgb(255, 255, 255);
   }
+  body {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background-color: var(--clr-orange);
+  }
   .text-span-2 {
     margin-bottom: 0.25em;
     padding-bottom: 1em;
     text-align: center;
+  }
+  .section-title {
+    padding-inline-start: var(--size-6);
+    margin-block: var(--size-9) var(--size-3);
+    width: min(53%, 2000px);
+    margin-inline: auto;
   }
   .primary-header {
     display: block;
@@ -874,12 +896,7 @@ footer a {
     height: 100%;
     max-height: 60px;
   }
-  .section-title {
-    padding-inline-start: var(--size-6);
-    margin-block: var(--size-9) var(--size-3);
-    width: min(70%, 1700px);
-    margin-inline: auto;
-  }
+
   .primary-navigation {
     background-color: rgb(155, 154, 154);
     background-image: url(/img/logo.jpg);
@@ -961,7 +978,7 @@ footer a {
     flex: 0 1 50%;
     display: flex;
     flex-direction: row;
-    padding: 4em 2em;
+    padding: 4em 4em;
     justify-content: center;
   }
   .about-us_intro {
@@ -1066,7 +1083,7 @@ footer a {
   .section-title {
     padding-inline-start: var(--size-6);
     margin-block: var(--size-9) var(--size-3);
-    width: min(65%, 2000px);
+    width: min(71%, 2000px);
     margin-inline: auto;
   }
   .text-span-2 {
@@ -1082,9 +1099,9 @@ footer a {
     color: white;
     text-align: center;
     margin-top: 0em;
-    width: min(100%, 2000px);
+    width: min(100%, 3000px);
     margin-inline: auto;
-    padding: 15vh 0 0;
+    padding: 5vh 0 0;
   }
 }
 
