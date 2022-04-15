@@ -58,9 +58,8 @@ html {
 }
 
 body {
-  margin: 0;
   text-align: center;
-  width: min(100%, 1800px);
+  width: min(100% - 2rem, 2000px);
   margin-inline: auto;
   background-color: var(--clr-accent-dark);
 }
