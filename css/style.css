@@ -334,11 +334,6 @@ p:last :last-child {
   }
 }
 
-@media (min-width: 35em) {
-  .primary-navigation {
-  }
-}
-
 @media (min-width: 35em) and (max-width: 44.999em) {
   .primary-navigation a > span {
     display: none;
